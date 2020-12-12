@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.3rem;
+}
+
+.header__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 1.7rem 2.5rem;
+}
+
+.header__ul li {
+  rgba(0,0,0,0.87);
+  text-decoration: none;
+  margin-left: 2.2rem;
+}
+
+.header__ul li:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.header__ul--img {
+  width: 1.6rem;
+}
+
+.header__ul--button {
+  padding: 0.6rem 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #4285f4;
+  outline: none;
+  border: 1px solid #4285f4;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-bottom: 10rem;
+}
+
+.main__logo img{
+  padding: 3rem;
+  
+}
+
+.main__logo img{
+  width: 35rem;
+}
+
+.main__container--input input{
+  border-radius: 10rem;
+  border: 1px solid rgb(209, 203, 203);
+  width: 90%;
+  max-width: 700px;
+  outline: none;
+  height: 4.5rem;
+}
+
+.main__container--buttons{
+  padding: 3.5rem;
+}
+
+.main__container--buttons button{
+  color: #3c4043;
+  background-color: #f8f9fa;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+}
+
+.main__container--buttons button:hover{
+  outline: 1px solid rgb(209, 203, 203);
+  border-radius: 2rem;
+  cursor: pointer
+}
+
+.main__container--GooglePlay{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main__container--GooglePlay p{
+  font-size: 1.3rem;
+}
+
+.main__container--GooglePlay p a{
+  text-decoration: none;
+  color: #1a0dab
+}
+
+.main__container--GooglePlay a:visited{
+  color: #609
+}
+
+.main__container--GooglePlay p a:hover{
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.main__playAccess {
+  margin-right: 1.4rem;
+}
+
+.main__playAccess img{
+  width: 2.5rem;
+}
+
+footer{
+  font-size: 1.4rem;
+  color: rgba(0,0,0,.54);
+}
+
+.footer__firstContainer{
+  border: 1px solid rgb(209, 203, 203);
+  padding: 1rem 3rem;
+}
+
+.footer__firstContainer,
+.footer__secondContainer{
+  background: #f2f2f2
+}
+
+.footer__secondContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border-right: 1px solid rgb(209, 203, 203);
+  border-left: 1px solid rgb(209, 203, 203);
+  border-bottom: 1px solid rgb(209, 203, 203);
+}
+
+.footer__secondContainer--firstList{
+  display: flex;
+}
+
+.footer__secondContainer--firstList li,
+.footer__secondContainer--secondList li{
+  list-style: none;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+.footer__secondContainer--secondList:last-child{
+  padding-right: 3rem;
+}
+
+.footer__secondContainer--firstList li:hover,
+.footer__secondContainer--secondList li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer__secondContainer--firstList,
+.footer__secondContainer--secondList{
+  display: flex;
+}
+
+@media (min-width: 850px){
+  .footer__secondContainer{
+    flex-direction: row;
+  }
+}
+
+
